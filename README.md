@@ -1,6 +1,10 @@
 espower-loader
 ================================
 
+[![Build Status](https://travis-ci.org/twada/espower-loader.png?branch=master)](https://travis-ci.org/twada/espower-loader)
+[![NPM version](https://badge.fury.io/js/espower-loader.png)](http://badge.fury.io/js/espower-loader)
+[![Dependency Status](https://gemnasium.com/twada/espower-loader.png)](https://gemnasium.com/twada/espower-loader)
+
 Power Assert feature instrumentor on the fly.
 
 
