@@ -1,0 +1,55 @@
+{
+  "name": "espower-loader",
+  "description": "Power Assert feature instrumentor on the fly",
+  "version": "0.1.0",
+  "keywords": [
+    "test",
+    "assert",
+    "testing",
+    "ecmascript",
+    "ast"
+  ],
+  "homepage": "https://github.com/twada/espower-loader",
+  "author": {
+    "name": "Takuto Wada",
+    "email": "takuto.wada@gmail.com"
+  },
+  "main": "./lib/espower-loader",
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/twada/espower-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twada/espower-loader/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/twada/espower-loader/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "power-assert": "~0.2.2",
+    "espower": "~0.2.1",
+    "esprima": "~1.0.4",
+    "escodegen": "~0.0.28",
+    "lodash": "~2.4.0",
+    "minimatch": "~0.2.12"
+  },
+  "devDependencies": {
+    "mocha": "~1.15.1",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-mocha-test": "~0.8.1",
+    "grunt": "~0.4.2",
+    "expect.js": "~0.2.0"
+  }
+}

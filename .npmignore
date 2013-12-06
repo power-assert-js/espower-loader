@@ -1,0 +1,6 @@
+.git*
+.idea*
+.travis.yml
+node_modules/
+npm-debug.log
+tmp
