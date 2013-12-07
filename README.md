@@ -24,9 +24,9 @@ You can instrument `power-assert` without code generation (e.g. withoug using `g
 
 For mocha, Just add `--require` option.
 
-    $ mocha --require ./enable-power-assert test/some_test_using_powerassert.js
+    $ mocha --require ./path/to/enable-power-assert test/some_test_using_powerassert.js
 
-where `enable-power-assert.js` in current directory is,
+where `enable-power-assert.js` somewhere in your project is,
 
 ```javascript
 require('espower-loader')({
