@@ -41,8 +41,8 @@
     "power-assert": "~0.2.2",
     "espower": "~0.2.1",
     "esprima": "~1.0.4",
-    "escodegen": "~0.0.28",
-    "lodash": "~2.4.0",
+    "escodegen": "~1.0.1",
+    "lodash": "~2.4.1",
     "minimatch": "~0.2.12"
   },
   "devDependencies": {
