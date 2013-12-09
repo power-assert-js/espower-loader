@@ -1,0 +1,19 @@
+{
+    "name": "espower-loader",
+    "version": "0.1.0",
+    "main": "lib/espower-loader.js",
+    "ignore": [
+        "**/.*",
+        "Gruntfile.js",
+        "node_modules",
+        "package.json",
+        "test",
+        "test_loader"
+    ],
+    "dependencies": {
+        "espower": "~0.2.1",
+        "esprima": "~1.0.4",
+        "escodegen": "~1.0.1",
+        "lodash": "~2.4.1"
+    }
+}
