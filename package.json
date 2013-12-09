@@ -38,7 +38,6 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "power-assert": "~0.2.2",
     "espower": "~0.2.1",
     "esprima": "~1.0.4",
     "escodegen": "~1.0.1",
@@ -46,6 +45,7 @@
     "minimatch": "~0.2.12"
   },
   "devDependencies": {
+    "power-assert": "~0.2.2",
     "mocha": "~1.15.1",
     "grunt-contrib-jshint": "~0.7.2",
     "grunt-mocha-test": "~0.8.1",
