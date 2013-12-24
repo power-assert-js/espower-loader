@@ -1,4 +1,6 @@
-var assert = require('power-assert'),
+var empower = require('empower'),
+    formatter = require('power-assert-formatter')(),
+    assert = empower(require('assert'), formatter),
     expect = require('expect.js');
 
 describe('power-assert message', function () {

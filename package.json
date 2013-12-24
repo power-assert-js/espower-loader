@@ -45,7 +45,8 @@
     "minimatch": "~0.2.14"
   },
   "devDependencies": {
-    "power-assert": "~0.2.2",
+    "empower": "~0.3.0",
+    "power-assert-formatter": "~0.3.0",
     "mocha": "~1.16.2",
     "grunt-contrib-jshint": "~0.7.2",
     "grunt-mocha-test": "~0.8.1",
