@@ -21,7 +21,7 @@ Please note that `espower-loader` is an alpha version product. Pull-requests, is
 EXAMPLE
 ---------------------------------------
 
-You can instrument `power-assert` without code generation (e.g. withoug using `grunt-espower`).
+You can instrument `power-assert` without code generation (e.g. without using `grunt-espower`).
 
 For mocha, Just add `--require` option.
 
