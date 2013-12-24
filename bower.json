@@ -11,7 +11,7 @@
         "test_loader"
     ],
     "dependencies": {
-        "espower": "~0.2.1",
+        "espower": "~0.3.0",
         "esprima": "~1.0.4",
         "escodegen": "~1.0.1",
         "lodash": "~2.4.1"

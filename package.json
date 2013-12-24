@@ -38,15 +38,15 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "espower": "~0.2.1",
+    "espower": "~0.3.0",
     "esprima": "~1.0.4",
     "escodegen": "~1.0.1",
     "lodash": "~2.4.1",
-    "minimatch": "~0.2.12"
+    "minimatch": "~0.2.14"
   },
   "devDependencies": {
     "power-assert": "~0.2.2",
-    "mocha": "~1.15.1",
+    "mocha": "~1.16.2",
     "grunt-contrib-jshint": "~0.7.2",
     "grunt-mocha-test": "~0.8.1",
     "grunt": "~0.4.2",
