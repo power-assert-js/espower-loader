@@ -38,7 +38,7 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "espower": "~0.3.0",
+    "espower": "~0.3.1",
     "esprima": "~1.0.4",
     "escodegen": "~1.0.1",
     "lodash.merge": "~2.4.1",
