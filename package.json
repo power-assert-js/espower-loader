@@ -41,7 +41,7 @@
     "espower": "~0.3.0",
     "esprima": "~1.0.4",
     "escodegen": "~1.0.1",
-    "lodash": "~2.4.1",
+    "lodash.merge": "~2.4.1",
     "minimatch": "~0.2.14"
   },
   "devDependencies": {
