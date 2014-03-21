@@ -1,7 +1,7 @@
 {
   "name": "espower-loader",
   "description": "Power Assert feature instrumentor on the fly",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "keywords": [
     "test",
     "assert",
