@@ -36,7 +36,7 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "espower-source": "^0.4.0",
+    "espower-source": "~0.4.1",
     "minimatch": "~0.2.14"
   },
   "devDependencies": {
