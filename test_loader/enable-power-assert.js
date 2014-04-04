@@ -1,4 +1,4 @@
-require('../lib/espower-loader')({
+require('..')({
 
     // directory where match starts with
     cwd: process.cwd(),
