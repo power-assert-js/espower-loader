@@ -36,14 +36,14 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "espower-source": "~0.4.1",
+    "espower-source": "~0.6.0",
     "minimatch": "~0.2.14"
   },
   "devDependencies": {
-    "empower": "~0.4.1",
-    "power-assert-formatter": "~0.4.0",
+    "empower": "~0.6.0",
+    "power-assert-formatter": "~0.6.0",
     "mocha": "~1.18.2",
-    "grunt-contrib-jshint": "~0.9.2",
+    "grunt-contrib-jshint": "~0.10.0",
     "grunt-mocha-test": "~0.10.0",
     "grunt": "~0.4.2",
     "expect.js": "~0.3.1",
