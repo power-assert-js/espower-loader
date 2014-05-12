@@ -15,7 +15,7 @@ describe('power-assert message', function () {
                     expect(e.expected).to.be.ok();
                 } else {
                     expect(e.message.split('\n').slice(2, -1)).to.eql(expectedLines.map(function (line) {
-                        return '            ' + line; // BK: adding indentation
+                        return line;
                     }));
                 }
             }
@@ -27,12 +27,17 @@ describe('power-assert message', function () {
         this.expectPowerAssertMessage(function () {
             assert((three * (seven * ten)) === three);
         }, [
-            'assert((three * (seven * ten)) === three);',
-            '        |     |  |     | |     |   |      ',
-            '        |     |  |     | |     |   3      ',
-            '        |     |  |     | 10    false      ',
-            '        |     |  7     70                 ',
-            '        3     210                         '
+            'assert(three * (seven * ten) === three)',
+            '       |     |  |     | |    |   |     ',
+            '       |     |  |     | |    |   3     ',
+            '       |     |  |     | 10   false     ',
+            '       |     |  7     70               ',
+            '       3     210                       ',
+            '',
+            '$$$ [number] three',
+            '### [number] three * (seven * ten)',
+            '$=> 3',
+            '#=> 210'
         ]);
     });
 
@@ -41,9 +46,9 @@ describe('power-assert message', function () {
         this.expectPowerAssertMessage(function () {
             assert.equal(1, minusOne);
         },[
-            'assert.equal(1, minusOne);',
-            '                |         ',
-            '                -1        '
+            'assert.equal(1, minusOne)',
+            '                |        ',
+            '                -1       '
         ]);
     });
 
