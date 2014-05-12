@@ -52,9 +52,7 @@ require('espower-loader')({
 
     // options for espower module
     espowerOptions: {
-        destructive: false,
         powerAssertVariableName: 'assert',
-        lineSeparator: '\n',
         targetMethods: {
             oneArg: [
                 'ok'
