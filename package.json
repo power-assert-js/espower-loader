@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "empower": "~0.7.1",
-    "power-assert-formatter": "~0.7.0",
+    "power-assert-formatter": "~0.7.1",
     "mocha": "~1.18.2",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-mocha-test": "~0.10.2",

@@ -34,10 +34,10 @@ describe('power-assert message', function () {
             '       |     |  7     70               ',
             '       3     210                       ',
             '',
-            '$$$ [number] three',
-            '### [number] three * (seven * ten)',
-            '$=> 3',
-            '#=> 210'
+            '[number] three',
+            '=> 3',
+            '[number] three * (seven * ten)',
+            '=> 210'
         ]);
     });
 
