@@ -78,4 +78,4 @@ AUTHOR
 
 LICENSE
 ---------------------------------------
-Licensed under the [MIT](https://raw.github.com/twada/espower-loader/master/MIT-LICENSE.txt) license.
+Licensed under the [MIT](https://github.com/twada/espower-loader/blob/master/MIT-LICENSE.txt) license.

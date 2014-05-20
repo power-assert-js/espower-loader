@@ -5,7 +5,7 @@
  *
  * Copyright (c) 2013-2014 Takuto Wada
  * Licensed under the MIT license.
- *   https://raw.github.com/twada/espower-loader/master/MIT-LICENSE.txt
+ *   https://github.com/twada/espower-loader/blob/master/MIT-LICENSE.txt
  */
 var extensions = require.extensions,
     originalLoader = extensions['.js'],
