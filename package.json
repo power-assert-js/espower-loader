@@ -16,6 +16,16 @@
     "email": "takuto.wada@gmail.com"
   },
   "main": "./index.js",
+  "files": [
+    "Gruntfile.js",
+    "MIT-LICENSE.txt",
+    "README.md",
+    "examples",
+    "index.js",
+    "package.json",
+    "test",
+    "test_loader"
+  ],
   "scripts": {
     "test": "grunt test"
   },
@@ -42,7 +52,7 @@
   "devDependencies": {
     "empower": "~0.7.2",
     "power-assert-formatter": "~0.7.1",
-    "mocha": "~1.20.0",
+    "mocha": "~1.20.1",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-mocha-test": "~0.10.2",
     "grunt": "~0.4.2",
