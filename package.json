@@ -17,11 +17,12 @@
   },
   "main": "./index.js",
   "files": [
-    "Gruntfile.js",
+    "CHANGELOG.md",
     "MIT-LICENSE.txt",
     "README.md",
     "examples",
     "index.js",
+    "Gruntfile.js",
     "package.json",
     "test",
     "test_loader"

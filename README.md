@@ -67,6 +67,11 @@ require('espower-loader')({
 ```
 
 
+CHANGELOG
+---------------------------------------
+See [CHANGELOG](https://github.com/twada/espower-loader/blob/master/CHANGELOG.md)
+
+
 AUTHOR
 ---------------------------------------
 * [Takuto Wada](http://github.com/twada)
