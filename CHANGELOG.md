@@ -1,3 +1,11 @@
+## 0.9.0 (2014-09-02)
+
+
+#### Features
+
+* **espower-loader:** use espower-source 0.9.0 ([c5329f39](https://github.com/twada/espower-loader/commit/c5329f397d4ab8e434a1788d0fa1c2eb7670a25c))
+
+
 ## 0.8.0 (2014-08-12)
 
 
