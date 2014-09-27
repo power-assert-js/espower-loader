@@ -40,11 +40,10 @@
   "homepage": "https://github.com/twada/espower-loader",
   "keywords": [
     "power-assert",
-    "test",
     "assert",
-    "testing",
-    "ecmascript",
-    "ast"
+    "assertion",
+    "test",
+    "testing"
   ],
   "license": {
     "type": "MIT",
