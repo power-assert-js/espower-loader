@@ -31,4 +31,30 @@ describe('minimatch learning', function () {
             assert(minimatch(this.filepath, '**/test/**/*.js'));
         });
     });
+
+    describe('patterns', function () {
+        describe('test/**/*.coffee', function () {
+            beforeEach(function () {
+                this.pattern = 'test/**/*.coffee';
+            });
+            it('does not match to helper', function () {
+                assert(! minimatch('helper/test.coffee', this.pattern));
+            });
+            it('matches to test', function () {
+                assert(minimatch('test/helper/test.coffee', this.pattern));
+            });
+        });
+        describe('{test,helper}/**/*.coffee', function () {
+            beforeEach(function () {
+                this.pattern = '{test,helper}/**/*.coffee';
+            });
+            it('matches to helper', function () {
+                assert(minimatch('helper/test.coffee', this.pattern));
+            });
+            it('matches to test', function () {
+                assert(minimatch('test/helper/test.coffee', this.pattern));
+            });
+        });
+    });
+
 });
