@@ -27,17 +27,17 @@ describe('power-assert message', function () {
         this.expectPowerAssertMessage(function () {
             assert((three * (seven * ten)) === three);
         }, [
-            'assert(three * (seven * ten) === three)',
-            '       |     |  |     | |    |   |     ',
-            '       |     |  |     | |    |   3     ',
-            '       |     |  |     | 10   false     ',
-            '       |     |  7     70               ',
-            '       3     210                       ',
-            '',
-            '[number] three',
-            '=> 3',
-            '[number] three * (seven * ten)',
-            '=> 210'
+            '  assert(three * (seven * ten) === three)',
+            '         |     |  |     | |    |   |     ',
+            '         |     |  |     | |    |   3     ',
+            '         |     |  |     | 10   false     ',
+            '         |     |  7     70               ',
+            '         3     210                       ',
+            '  ',
+            '  [number] three',
+            '  => 3',
+            '  [number] three * (seven * ten)',
+            '  => 210'
         ]);
     });
 
@@ -46,9 +46,9 @@ describe('power-assert message', function () {
         this.expectPowerAssertMessage(function () {
             assert.equal(1, minusOne);
         },[
-            'assert.equal(1, minusOne)',
-            '                |        ',
-            '                -1       '
+            '  assert.equal(1, minusOne)',
+            '                  |        ',
+            '                  -1       '
         ]);
     });
 
