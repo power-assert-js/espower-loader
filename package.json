@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "espower-source": "~0.10.0",
-    "minimatch": "~1.0.0"
+    "minimatch": "~2.0.1"
   },
   "devDependencies": {
     "empower": "~0.10.0",
