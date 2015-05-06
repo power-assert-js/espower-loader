@@ -10,8 +10,10 @@
     "url": "https://github.com/twada/espower-loader/issues"
   },
   "dependencies": {
+    "convert-source-map": "~1.1.0",
     "espower-source": "~0.10.0",
-    "minimatch": "~2.0.4"
+    "minimatch": "~2.0.4",
+    "source-map-support": "~0.2.10"
   },
   "devDependencies": {
     "empower": "~0.11.0",

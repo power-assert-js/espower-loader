@@ -11,6 +11,7 @@ var extensions = require.extensions,
     originalLoader = extensions['.js'],
     fs = require('fs'),
     minimatch = require('minimatch'),
+    convert = require('convert-source-map'),
     espowerSourceToSource = require('espower-source');
 
 function espowerLoader (options) {
@@ -19,10 +20,26 @@ function espowerLoader (options) {
     var separator = (options.pattern.lastIndexOf('/', 0) === 0) ? '' : '/',
         pattern = options.cwd + separator + options.pattern;
 
+    var pathToMap = {},
+        sourceMapSupport = require('source-map-support'),
+        originalRetrieveSourceMap = sourceMapSupport.retrieveSourceMap;
+    sourceMapSupport.install({
+        retrieveSourceMap: function (source) {
+            if (minimatch(source, pattern) && pathToMap[source]) {
+                return {
+                    map: pathToMap[source]
+                };
+            }
+            return originalRetrieveSourceMap(source);
+        }
+    });
+
     extensions['.js'] = function(localModule, filepath) {
         var output;
         if (minimatch(filepath, pattern)){
             output = espowerSourceToSource(fs.readFileSync(filepath, 'utf-8'), filepath, options.espowerOptions);
+            var map = convert.fromSource(output).toObject();
+            pathToMap[filepath] = map;
             localModule._compile(output, filepath);
         } else {
             originalLoader(localModule, filepath);

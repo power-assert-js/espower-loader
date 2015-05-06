@@ -5,13 +5,15 @@ var empower = require('empower'),
 
 describe('power-assert message', function () {
     beforeEach(function () {
-        this.expectPowerAssertMessage = function (body, expectedLines) {
+        this.expectPowerAssertMessage = function (body, expectedLines, expectedPosition) {
             try {
                 body();
             } catch (e) {
                 expect(e.message.split('\n').slice(2, -1)).to.eql(expectedLines.map(function (line) {
                     return line;
                 }));
+                var re = new RegExp("test\/tobe_instrumented\/tobe_instrumented_test.js:" + expectedPosition + "\n");
+                expect(e.stack).to.match(re);
                 return;
             }
             expect().fail("AssertionError should be thrown");
@@ -34,7 +36,7 @@ describe('power-assert message', function () {
             '  => 3',
             '  [number] three * (seven * ten)',
             '  => 210'
-        ]);
+        ], '26:13');
     });
 
     it('equal with Literal and Identifier: assert.equal(1, minusOne);', function () {
@@ -45,7 +47,7 @@ describe('power-assert message', function () {
             '  assert.equal(1, minusOne)',
             '                  |        ',
             '                  -1       '
-        ]);
+        ], '45:20');
     });
 
 });
