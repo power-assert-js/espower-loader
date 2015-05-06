@@ -1,10 +1,9 @@
 espower-loader
 ================================
 
-[![Build Status](https://travis-ci.org/twada/espower-loader.svg?branch=master)](https://travis-ci.org/twada/espower-loader)
-[![NPM version](https://badge.fury.io/js/espower-loader.svg)](http://badge.fury.io/js/espower-loader)
-[![Dependency Status](https://gemnasium.com/twada/espower-loader.svg)](https://gemnasium.com/twada/espower-loader)
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+[![Build Status][travis-image]][travis-url]
+[![NPM package][npm-image]][npm-url]
+[![Dependency Status][depstat-image]][depstat-url]
 
 Power Assert feature instrumentor on the fly.
 
@@ -39,7 +38,7 @@ require('espower-loader')({
 });
 ```
 
-You can specify `espower` options explicitly.
+You can specify options for `espower` module explicitly.
 
 ```javascript
 require('espower-loader')({
@@ -80,3 +79,13 @@ AUTHOR
 LICENSE
 ---------------------------------------
 Licensed under the [MIT](https://github.com/twada/espower-loader/blob/master/MIT-LICENSE.txt) license.
+
+
+[npm-url]: https://npmjs.org/package/espower-loader
+[npm-image]: https://badge.fury.io/js/espower-loader.svg
+
+[travis-url]: http://travis-ci.org/twada/espower-loader
+[travis-image]: https://secure.travis-ci.org/twada/espower-loader.svg?branch=master
+
+[depstat-url]: https://gemnasium.com/twada/espower-loader
+[depstat-image]: https://gemnasium.com/twada/espower-loader.svg
