@@ -1,3 +1,11 @@
+## [0.11.0](https://github.com/twada/espower-loader/releases/tag/v0.11.0) (2015-05-06)
+
+
+#### Features
+
+* [Adjust line and column number in stack traces](https://github.com/twada/espower-loader/pull/3)
+
+
 ## [0.10.0](https://github.com/twada/espower-loader/releases/tag/v0.10.0) (2014-11-11)
 
 
