@@ -1,6 +1,6 @@
-var minimatch = require('minimatch'),
-    path = require('path'),
-    assert = require('assert');
+var minimatch = require('minimatch');
+var path = require('path');
+var assert = require('assert');
 
 describe('minimatch learning', function () {
 

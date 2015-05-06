@@ -7,22 +7,21 @@
  * Licensed under the MIT license.
  *   https://github.com/twada/espower-loader/blob/master/MIT-LICENSE.txt
  */
-var extensions = require.extensions,
-    originalLoader = extensions['.js'],
-    fs = require('fs'),
-    minimatch = require('minimatch'),
-    convert = require('convert-source-map'),
-    espowerSourceToSource = require('espower-source');
+var extensions = require.extensions;
+var originalLoader = extensions['.js'];
+var fs = require('fs');
+var minimatch = require('minimatch');
+var convert = require('convert-source-map');
+var espowerSourceToSource = require('espower-source');
 
 function espowerLoader (options) {
     'use strict';
 
-    var separator = (options.pattern.lastIndexOf('/', 0) === 0) ? '' : '/',
-        pattern = options.cwd + separator + options.pattern;
-
-    var pathToMap = {},
-        sourceMapSupport = require('source-map-support'),
-        originalRetrieveSourceMap = sourceMapSupport.retrieveSourceMap;
+    var separator = (options.pattern.lastIndexOf('/', 0) === 0) ? '' : '/';
+    var pattern = options.cwd + separator + options.pattern;
+    var pathToMap = {};
+    var sourceMapSupport = require('source-map-support');
+    var originalRetrieveSourceMap = sourceMapSupport.retrieveSourceMap;
     sourceMapSupport.install({
         retrieveSourceMap: function (source) {
             if (minimatch(source, pattern) && pathToMap[source]) {
