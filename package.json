@@ -16,10 +16,7 @@
   "devDependencies": {
     "empower": "~0.11.0",
     "expect.js": "~0.3.1",
-    "grunt": "~0.4.2",
-    "grunt-contrib-jshint": "~0.11.2",
-    "grunt-mocha-test": "~0.12.7",
-    "jit-grunt": "~0.9.1",
+    "jshint": "~2.7.0",
     "mocha": "~2.2.4",
     "power-assert-formatter": "~0.11.0"
   },
@@ -32,7 +29,6 @@
     "README.md",
     "examples",
     "index.js",
-    "Gruntfile.js",
     "package.json",
     "test",
     "test_loader"
@@ -55,6 +51,10 @@
     "url": "http://github.com/twada/espower-loader.git"
   },
   "scripts": {
-    "test": "grunt test"
+    "lint": "jshint index.js",
+    "unit": "mocha 'test/unit/**/*.js'",
+    "tobe_instrumented": "mocha --require './test_loader/enable-power-assert' 'test/tobe_instrumented/*.js'",
+    "not_tobe_instrumented": "mocha 'test/not_tobe_instrumented/*.js'",
+    "test": "npm run lint && npm run unit && npm run tobe_instrumented && npm run not_tobe_instrumented"
   }
 }
