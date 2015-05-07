@@ -12,7 +12,7 @@ DESCRIPTION
 ---------------------------------------
 `espower-loader` is a Node.js module loader that enhances target sources on the fly. So you can instrument Power Assert feature without code generation for now.
 
-`espower-loader` applies [espower](http://github.com/twada/espower) to target sources on loading them. `espower` manipulates assertion expression (JavaScript Code) represented as [Mozilla JavaScript AST](https://developer.mozilla.org/en-US/docs/SpiderMonkey/Parser_API), to instrument power-assert feature into the code. `espower-loader` also adjusts line and column number in stack traces by using [source-map-support](https://github.com/evanw/node-source-map-support) module.
+`espower-loader` applies [espower](http://github.com/twada/espower) to target sources on loading them. `espower` manipulates assertion expression (JavaScript Code) in the form of ECMAScript AST defined in [The ESTree Spec](https://github.com/estree/estree) (formerly known as [Mozilla SpiderMonkey Parser API](https://developer.mozilla.org/en-US/docs/SpiderMonkey/Parser_API)), to instrument power-assert feature into the code. `espower-loader` also adjusts line and column number in stack traces by using [source-map-support](https://github.com/evanw/node-source-map-support) module.
 
 Please note that `espower-loader` is a beta version product. Pull-requests, issue reports and patches are always welcomed. See [power-assert](http://github.com/twada/power-assert) project for more documentation.
 
