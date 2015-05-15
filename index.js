@@ -1,11 +1,11 @@
 /**
  * espower-loader - Power Assert feature instrumentor on the fly.
  *
- * https://github.com/twada/espower-loader
+ * https://github.com/power-assert-js/espower-loader
  *
  * Copyright (c) 2013-2015 Takuto Wada
  * Licensed under the MIT license.
- *   https://github.com/twada/espower-loader/blob/master/MIT-LICENSE.txt
+ *   https://github.com/power-assert-js/espower-loader/blob/master/MIT-LICENSE.txt
  */
 var extensions = require.extensions;
 var originalLoader = extensions['.js'];

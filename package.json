@@ -4,10 +4,11 @@
   "version": "0.11.0",
   "author": {
     "name": "Takuto Wada",
-    "email": "takuto.wada@gmail.com"
+    "email": "takuto.wada@gmail.com",
+    "url": "http://github.com/twada"
   },
   "bugs": {
-    "url": "https://github.com/twada/espower-loader/issues"
+    "url": "https://github.com/power-assert-js/espower-loader/issues"
   },
   "dependencies": {
     "convert-source-map": "~1.1.0",
@@ -35,7 +36,7 @@
     "test",
     "test_loader"
   ],
-  "homepage": "https://github.com/twada/espower-loader",
+  "homepage": "https://github.com/power-assert-js/espower-loader",
   "keywords": [
     "power-assert",
     "assert",
@@ -45,12 +46,12 @@
   ],
   "license": {
     "type": "MIT",
-    "url": "https://github.com/twada/espower-loader/blob/master/MIT-LICENSE.txt"
+    "url": "https://github.com/power-assert-js/espower-loader/blob/master/MIT-LICENSE.txt"
   },
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/twada/espower-loader.git"
+    "url": "http://github.com/power-assert-js/espower-loader.git"
   },
   "scripts": {
     "lint": "jshint index.js",
