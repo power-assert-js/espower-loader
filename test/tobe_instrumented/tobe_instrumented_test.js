@@ -4,21 +4,6 @@ var assert = empower(require('assert'), formatter);
 var expect = require('expect.js');
 
 describe('power-assert message', function () {
-    beforeEach(function () {
-        this.expectPowerAssertMessage = function (body, expectedLines, expectedPosition) {
-            try {
-                body();
-            } catch (e) {
-                expect(e.message.split('\n').slice(2, -1)).to.eql(expectedLines.map(function (line) {
-                    return line;
-                }));
-                var re = new RegExp("test\/tobe_instrumented\/tobe_instrumented_test.js:" + expectedPosition + "\n");
-                expect(e.stack).to.match(re);
-                return;
-            }
-            expect().fail("AssertionError should be thrown");
-        };
-    });
     
     it('Nested CallExpression with BinaryExpression: assert((three * (seven * ten)) === three);', function () {
         var one = 1, two = 2, three = 3, seven = 7, ten = 10;
@@ -36,7 +21,7 @@ describe('power-assert message', function () {
             '  => 3',
             '  [number] three * (seven * ten)',
             '  => 210'
-        ], '26:13');
+        ], 11, 13);
     });
 
     it('equal with Literal and Identifier: assert.equal(1, minusOne);', function () {
@@ -47,7 +32,22 @@ describe('power-assert message', function () {
             '  assert.equal(1, minusOne)',
             '                  |        ',
             '                  -1       '
-        ], '45:20');
+        ], 30, 20);
     });
 
+    beforeEach(function () {
+        this.expectPowerAssertMessage = function (body, expectedDiagram, expectedLine, expectedColumn) {
+            try {
+                body();
+            } catch (e) {
+                expect(e.message.split('\n').slice(2, -1)).to.eql(expectedDiagram.map(function (line) {
+                    return line;
+                }));
+                expect(e.stack).to.match(new RegExp("test\/tobe_instrumented\/tobe_instrumented_test.js:" + expectedLine + ":" + expectedColumn + "\n"));
+                expect(e.stack).to.match(new RegExp("AssertionError:\\s*\\#\\s*test\/tobe_instrumented\/tobe_instrumented_test.js:" + expectedLine + "\n"));
+                return;
+            }
+            expect().fail("AssertionError should be thrown");
+        };
+    });
 });
