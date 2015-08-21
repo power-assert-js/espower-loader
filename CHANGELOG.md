@@ -1,3 +1,12 @@
+## [1.0.0](https://github.com/power-assert-js/espower-loader/releases/tag/v1.0.0) (2015-08-21)
+
+
+#### Features
+
+  * transfer to power-assert-js organization ([2e155de8](https://github.com/power-assert-js/espower-loader/commit/2e155de84900584ae678c4a9d413b92ffe5051ee))
+  * [use options.cwd for default sourceRoot](https://github.com/power-assert-js/espower-loader/pull/4)
+
+
 ## [0.11.0](https://github.com/power-assert-js/espower-loader/releases/tag/v0.11.0) (2015-05-06)
 
 
