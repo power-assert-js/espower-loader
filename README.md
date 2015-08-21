@@ -23,7 +23,7 @@ FYI: You may be interested in [intelli-espower-loader](https://github.com/azu/in
 EXAMPLE
 ---------------------------------------
 
-You can instrument `power-assert` without code generation (e.g. without using `grunt-espower`).
+You can instrument `power-assert` without code generation (e.g. without using `grunt-espower`,`gulp-espower`, and so on).
 
 For mocha, Just add `--require` option.
 
