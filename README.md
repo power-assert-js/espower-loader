@@ -17,7 +17,7 @@ DESCRIPTION
 Pull-requests, issue reports and patches are always welcomed. See [power-assert](http://github.com/power-assert-js/power-assert) project for more documentation.
 
 
-FYI: You may be interested in [intelli-espower-loader](https://github.com/azu/intelli-espower-loader) to go one step further. With [intelli-espower-loader](https://github.com/azu/intelli-espower-loader), you don't need to create loader file (like `enable-power-assert.js`). Just define test directory in `package.json` wow!
+FYI: You may be interested in [intelli-espower-loader](https://github.com/power-assert-js/intelli-espower-loader) to go one step further. With [intelli-espower-loader](https://github.com/power-assert-js/intelli-espower-loader), you don't need to create loader file (like `enable-power-assert.js`). Just define test directory in `package.json` wow!
 
 
 EXAMPLE
