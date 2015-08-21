@@ -14,7 +14,7 @@ DESCRIPTION
 
 `espower-loader` applies [espower](http://github.com/power-assert-js/espower) to target sources on loading them. `espower` manipulates assertion expression (JavaScript Code) in the form of ECMAScript AST defined in [The ESTree Spec](https://github.com/estree/estree) (formerly known as [Mozilla SpiderMonkey Parser API](https://developer.mozilla.org/en-US/docs/SpiderMonkey/Parser_API)), to instrument power-assert feature into the code. `espower-loader` also adjusts line and column number in stack traces by using [source-map-support](https://github.com/evanw/node-source-map-support) module.
 
-Please note that `espower-loader` is a beta version product. Pull-requests, issue reports and patches are always welcomed. See [power-assert](http://github.com/power-assert-js/power-assert) project for more documentation.
+Pull-requests, issue reports and patches are always welcomed. See [power-assert](http://github.com/power-assert-js/power-assert) project for more documentation.
 
 
 FYI: You may be interested in [intelli-espower-loader](https://github.com/azu/intelli-espower-loader) to go one step further. With [intelli-espower-loader](https://github.com/azu/intelli-espower-loader), you don't need to create loader file (like `enable-power-assert.js`). Just define test directory in `package.json` wow!
@@ -59,7 +59,9 @@ require('espower-loader')({
             'assert.strictEqual(actual, expected, [message])',
             'assert.notStrictEqual(actual, expected, [message])',
             'assert.deepEqual(actual, expected, [message])',
-            'assert.notDeepEqual(actual, expected, [message])'
+            'assert.notDeepEqual(actual, expected, [message])',
+            'assert.deepStrictEqual(actual, expected, [message])',
+            'assert.notDeepStrictEqual(actual, expected, [message])'
         ]
     }
 });

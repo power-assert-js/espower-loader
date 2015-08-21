@@ -10,6 +10,7 @@
 var extensions = require.extensions;
 var originalLoader = extensions['.js'];
 var fs = require('fs');
+var extend = require('xtend');
 var minimatch = require('minimatch');
 var convert = require('convert-source-map');
 var sourceMapSupport = require('source-map-support');
@@ -33,11 +34,12 @@ function espowerLoader (options) {
             return originalRetrieveSourceMap(source);
         }
     });
+    var espowerOptions = extend({ sourceRoot: options.cwd }, options.espowerOptions);
 
     extensions['.js'] = function (localModule, filepath) {
         var output;
         if (minimatch(filepath, pattern)){
-            output = espowerSourceToSource(fs.readFileSync(filepath, 'utf-8'), filepath, options.espowerOptions);
+            output = espowerSourceToSource(fs.readFileSync(filepath, 'utf-8'), filepath, espowerOptions);
             var map = convert.fromSource(output).toObject();
             pathToMap[filepath] = map;
             localModule._compile(output, filepath);

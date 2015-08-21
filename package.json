@@ -11,17 +11,18 @@
     "url": "https://github.com/power-assert-js/espower-loader/issues"
   },
   "dependencies": {
-    "convert-source-map": "~1.1.0",
-    "espower-source": "~0.10.0",
-    "minimatch": "~2.0.4",
-    "source-map-support": "~0.2.10"
+    "convert-source-map": "^1.1.0",
+    "espower-source": "^1.0.0",
+    "minimatch": "^2.0.0",
+    "source-map-support": "^0.3.0",
+    "xtend": "^4.0.0"
   },
   "devDependencies": {
-    "empower": "~0.11.0",
-    "expect.js": "~0.3.1",
-    "jshint": "~2.7.0",
-    "mocha": "~2.2.4",
-    "power-assert-formatter": "~0.11.0"
+    "empower": "^1.0.0",
+    "expect.js": "^0.3.1",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5",
+    "power-assert-formatter": "^1.0.0"
   },
   "engines": {
     "node": ">= 0.8.0"
@@ -44,10 +45,7 @@
     "test",
     "testing"
   ],
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/power-assert-js/espower-loader/blob/master/MIT-LICENSE.txt"
-  },
+  "license": "MIT",
   "main": "./index.js",
   "repository": {
     "type": "git",
