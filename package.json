@@ -5,7 +5,7 @@
   "author": {
     "name": "Takuto Wada",
     "email": "takuto.wada@gmail.com",
-    "url": "http://github.com/twada"
+    "url": "https://github.com/twada"
   },
   "bugs": {
     "url": "https://github.com/power-assert-js/espower-loader/issues"
@@ -49,7 +49,7 @@
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/power-assert-js/espower-loader.git"
+    "url": "https://github.com/power-assert-js/espower-loader.git"
   },
   "scripts": {
     "lint": "jshint index.js",

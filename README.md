@@ -12,9 +12,9 @@ DESCRIPTION
 ---------------------------------------
 `espower-loader` is a Node.js module loader that enhances target sources on the fly. So you can instrument Power Assert feature without code generation for now.
 
-`espower-loader` applies [espower](http://github.com/power-assert-js/espower) to target sources on loading them. `espower` manipulates assertion expression (JavaScript Code) in the form of ECMAScript AST defined in [The ESTree Spec](https://github.com/estree/estree) (formerly known as [Mozilla SpiderMonkey Parser API](https://developer.mozilla.org/en-US/docs/SpiderMonkey/Parser_API)), to instrument power-assert feature into the code. `espower-loader` also adjusts line and column number in stack traces by using [source-map-support](https://github.com/evanw/node-source-map-support) module.
+`espower-loader` applies [espower](https://github.com/power-assert-js/espower) to target sources on loading them. `espower` manipulates assertion expression (JavaScript Code) in the form of ECMAScript AST defined in [The ESTree Spec](https://github.com/estree/estree) (formerly known as [Mozilla SpiderMonkey Parser API](https://developer.mozilla.org/en-US/docs/SpiderMonkey/Parser_API)), to instrument power-assert feature into the code. `espower-loader` also adjusts line and column number in stack traces by using [source-map-support](https://github.com/evanw/node-source-map-support) module.
 
-Pull-requests, issue reports and patches are always welcomed. See [power-assert](http://github.com/power-assert-js/power-assert) project for more documentation.
+Pull-requests, issue reports and patches are always welcomed. See [power-assert](https://github.com/power-assert-js/power-assert) project for more documentation.
 
 
 FYI: You may be interested in [intelli-espower-loader](https://github.com/power-assert-js/intelli-espower-loader) to go one step further. With [intelli-espower-loader](https://github.com/power-assert-js/intelli-espower-loader), you don't need to create loader file (like `enable-power-assert.js`). Just define test directory in `package.json` wow!
@@ -75,7 +75,7 @@ See [CHANGELOG](https://github.com/power-assert-js/espower-loader/blob/master/CH
 
 AUTHOR
 ---------------------------------------
-* [Takuto Wada](http://github.com/twada)
+* [Takuto Wada](https://github.com/twada)
 
 
 LICENSE
@@ -86,7 +86,7 @@ Licensed under the [MIT](https://github.com/power-assert-js/espower-loader/blob/
 [npm-url]: https://npmjs.org/package/espower-loader
 [npm-image]: https://badge.fury.io/js/espower-loader.svg
 
-[travis-url]: http://travis-ci.org/power-assert-js/espower-loader
+[travis-url]: https://travis-ci.org/power-assert-js/espower-loader
 [travis-image]: https://secure.travis-ci.org/power-assert-js/espower-loader.svg?branch=master
 
 [depstat-url]: https://gemnasium.com/power-assert-js/espower-loader
