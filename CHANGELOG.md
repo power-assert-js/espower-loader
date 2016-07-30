@@ -1,3 +1,9 @@
+### [1.0.1](https://github.com/power-assert-js/espower-loader/releases/tag/v1.0.1) (2016-07-30)
+
+
+  * upgrade minimatch to ^3.0.0 ([5b63cc9](https://github.com/power-assert-js/espower-loader/commit/5b63cc9f3cb6a48678b0d676fecc02076bfb4e0e))
+
+
 ## [1.0.0](https://github.com/power-assert-js/espower-loader/releases/tag/v1.0.0) (2015-08-21)
 
 
