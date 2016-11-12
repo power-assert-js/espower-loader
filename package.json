@@ -32,9 +32,7 @@
     "README.md",
     "examples",
     "index.js",
-    "package.json",
-    "test",
-    "test_loader"
+    "package.json"
   ],
   "homepage": "https://github.com/power-assert-js/espower-loader",
   "keywords": [
