@@ -1,6 +1,4 @@
-var empower = require('empower');
-var formatter = require('power-assert-formatter')();
-var assert = empower(require('assert'), formatter);
+var assert = require('assert');
 var expect = require('expect.js');
 
 describe('power-assert client should work with not-instrumented code', function () {
