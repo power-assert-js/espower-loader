@@ -1,3 +1,11 @@
+## [1.1.0](https://github.com/power-assert-js/espower-loader/releases/tag/v1.1.0) (2016-11-12)
+
+
+#### Features
+
+* [Enable transparent assertion enhancement, embed value capturing helper into transpiled code (by upgrading espower-source to 2.0.0)](https://github.com/power-assert-js/espower-loader/pull/5)
+
+
 ### [1.0.1](https://github.com/power-assert-js/espower-loader/releases/tag/v1.0.1) (2016-07-30)
 
 
