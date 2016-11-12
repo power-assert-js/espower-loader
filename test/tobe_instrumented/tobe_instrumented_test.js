@@ -1,6 +1,4 @@
-var empower = require('empower');
-var formatter = require('power-assert-formatter')();
-var assert = empower(require('assert'), formatter);
+var assert = require('assert');
 var expect = require('expect.js');
 
 describe('power-assert message', function () {
@@ -21,7 +19,7 @@ describe('power-assert message', function () {
             '  => 3',
             '  [number] three * (seven * ten)',
             '  => 210'
-        ], 11, 13);
+        ], 9, 13);
     });
 
     it('equal with Literal and Identifier: assert.equal(1, minusOne);', function () {
@@ -32,7 +30,7 @@ describe('power-assert message', function () {
             '  assert.equal(1, minusOne)',
             '                  |        ',
             '                  -1       '
-        ], 30, 20);
+        ], 28, 20);
     });
 
     beforeEach(function () {
@@ -44,7 +42,7 @@ describe('power-assert message', function () {
                     return line;
                 }));
                 expect(e.stack).to.match(new RegExp("test\/tobe_instrumented\/tobe_instrumented_test.js:" + expectedLine + ":" + expectedColumn + "\n"));
-                expect(e.stack).to.match(new RegExp("AssertionError:\\s*\\#\\s*test\/tobe_instrumented\/tobe_instrumented_test.js:" + expectedLine + "\n"));
+                expect(e.message).to.match(new RegExp("\\s*\\#\\s*test\/tobe_instrumented\/tobe_instrumented_test.js:" + expectedLine + "\n"));
                 return;
             }
             expect().fail("AssertionError should be thrown");
