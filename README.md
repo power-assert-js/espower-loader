@@ -68,6 +68,16 @@ require('espower-loader')({
 ```
 
 
+OUR SUPPORT POLICY
+---------------------------------------
+
+We support Node under maintenance. In other words, we stop supporting old Node version when [their maintenance ends](https://github.com/nodejs/LTS).
+
+This means that any other environment is not supported.
+
+NOTE: If espower-source works in any of the unsupported environments, it is purely coincidental and has no bearing on future compatibility. Use at your own risk.
+
+
 CHANGELOG
 ---------------------------------------
 See [CHANGELOG](https://github.com/power-assert-js/espower-loader/blob/master/CHANGELOG.md)
