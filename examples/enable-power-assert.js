@@ -4,7 +4,7 @@ require('espower-loader')({
     cwd: process.cwd(),
 
     // glob pattern using minimatch module
-    pattern: 'test/**/*.js',
+    pattern: '{src,test}/**/*.js',
 
     // options for espower module
     espowerOptions: {
