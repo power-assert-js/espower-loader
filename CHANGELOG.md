@@ -1,3 +1,11 @@
+## [1.2.0](https://github.com/power-assert-js/espower-loader/releases/tag/v1.2.0) (2016-11-13)
+
+
+#### Features
+
+* use `process.cwd()` by default ([67edccdb](https://github.com/power-assert-js/espower-loader/commit/67edccdb898ecc6a9011716addc79346bef340cf))
+
+
 ## [1.1.0](https://github.com/power-assert-js/espower-loader/releases/tag/v1.1.0) (2016-11-12)
 
 
