@@ -33,7 +33,6 @@ where `enable-power-assert.js` somewhere in your project is,
 
 ```javascript
 require('espower-loader')({
-    cwd: process.cwd(),
     pattern: 'test/**/*.js'
 });
 ```

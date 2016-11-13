@@ -20,6 +20,7 @@ var pathToMap = {};
 
 function espowerLoader (options) {
     'use strict';
+    options = extend({ cwd: process.cwd() }, options);
 
     var patternStartsWithSlash = (options.pattern.lastIndexOf('/', 0) === 0);
     var separator = patternStartsWithSlash ? '' : '/';
