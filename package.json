@@ -10,6 +10,12 @@
   "bugs": {
     "url": "https://github.com/power-assert-js/espower-loader/issues"
   },
+  "contributors": [
+    {
+      "name": "Eward Song",
+      "url": "https://github.com/shepherdwind"
+    }
+  ],
   "dependencies": {
     "convert-source-map": "^1.1.0",
     "espower-source": "^2.0.0",

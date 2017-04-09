@@ -87,6 +87,11 @@ AUTHOR
 * [Takuto Wada](https://github.com/twada)
 
 
+CONTRIBUTORS
+---------------------------------------
+* [Eward Song (shepherdwind)](https://github.com/shepherdwind)
+
+
 LICENSE
 ---------------------------------------
 Licensed under the [MIT](https://github.com/power-assert-js/espower-loader/blob/master/MIT-LICENSE.txt) license.
