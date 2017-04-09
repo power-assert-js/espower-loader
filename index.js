@@ -29,7 +29,7 @@ function espowerLoader (options) {
             if (minimatch(source, pattern) && pathToMap[source]) {
                 return {
                     map: pathToMap[source],
-                    url: source,
+                    url: source
                 };
             }
             return null;
