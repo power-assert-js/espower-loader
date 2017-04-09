@@ -14,7 +14,6 @@ var extend = require('xtend');
 var minimatch = require('minimatch');
 var convert = require('convert-source-map');
 var sourceMapSupport = require('source-map-support');
-var originalRetrieveSourceMap = sourceMapSupport.retrieveSourceMap;
 var espowerSourceToSource = require('espower-source');
 var pathToMap = {};
 
@@ -29,10 +28,11 @@ function espowerLoader (options) {
         retrieveSourceMap: function (source) {
             if (minimatch(source, pattern) && pathToMap[source]) {
                 return {
-                    map: pathToMap[source]
+                    map: pathToMap[source],
+                    url: source,
                 };
             }
-            return originalRetrieveSourceMap(source);
+            return null;
         }
     });
     var espowerOptions = extend({ sourceRoot: options.cwd }, options.espowerOptions);
