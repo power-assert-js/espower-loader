@@ -1,3 +1,9 @@
+### [1.2.1](https://github.com/power-assert-js/espower-loader/releases/tag/v1.2.1) (2017-04-09)
+
+
+  * [update source-map-support to 0.4.x](https://github.com/power-assert-js/espower-loader/pull/6) by [@shepherdwind](https://github.com/shepherdwind)
+
+
 ## [1.2.0](https://github.com/power-assert-js/espower-loader/releases/tag/v1.2.0) (2016-11-13)
 
 
