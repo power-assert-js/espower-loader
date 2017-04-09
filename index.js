@@ -3,7 +3,7 @@
  *
  * https://github.com/power-assert-js/espower-loader
  *
- * Copyright (c) 2013-2016 Takuto Wada
+ * Copyright (c) 2013-2017 Takuto Wada
  * Licensed under the MIT license.
  *   https://github.com/power-assert-js/espower-loader/blob/master/MIT-LICENSE.txt
  */
