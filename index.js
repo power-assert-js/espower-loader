@@ -28,7 +28,7 @@ function espowerLoader (options) {
         retrieveSourceMap: function (source) {
             if (minimatch(source, pattern) && pathToMap[source]) {
                 return {
-                    map: pathToMap[source],
+                    map: pathToMap[source]
                 };
             }
             return null;
