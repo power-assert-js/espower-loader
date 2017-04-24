@@ -2,7 +2,7 @@ var assert = require('assert');
 var expect = require('expect.js');
 
 describe('power-assert message', function () {
-    
+
     it('Nested CallExpression with BinaryExpression: assert((three * (seven * ten)) === three);', function () {
         var one = 1, two = 2, three = 3, seven = 7, ten = 10;
         this.expectPowerAssertMessage(function () {
@@ -41,7 +41,7 @@ describe('power-assert message', function () {
                 expect(e.message.split('\n').slice(2, -1)).to.eql(expectedDiagram.map(function (line) {
                     return line;
                 }));
-                expect(e.stack).to.match(new RegExp("test\/tobe_instrumented\/tobe_instrumented_test.js:" + expectedLine + ":" + expectedColumn + "\n"));
+                expect(e.stack).to.match(new RegExp("at test\/tobe_instrumented\/tobe_instrumented_test.js:" + expectedLine + ":" + expectedColumn + "\n"));
                 expect(e.message).to.match(new RegExp("\\s*\\#\\s*test\/tobe_instrumented\/tobe_instrumented_test.js:" + expectedLine + "\n"));
                 return;
             }
