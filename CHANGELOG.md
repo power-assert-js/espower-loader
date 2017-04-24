@@ -1,3 +1,11 @@
+### [1.2.2](https://github.com/power-assert-js/espower-loader/releases/tag/v1.2.2) (2017-04-24)
+
+
+#### Bug Fixes
+
+  * [fix the filepath of the stack](https://github.com/power-assert-js/espower-loader/pull/7) by [@popomore](https://github.com/popomore)
+
+
 ### [1.2.1](https://github.com/power-assert-js/espower-loader/releases/tag/v1.2.1) (2017-04-09)
 
 
