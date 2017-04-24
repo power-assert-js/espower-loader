@@ -90,6 +90,7 @@ AUTHOR
 CONTRIBUTORS
 ---------------------------------------
 * [Eward Song (shepherdwind)](https://github.com/shepherdwind)
+* [Haoliang Gao (popomore)](https://github.com/popomore)
 
 
 LICENSE
